@@ -43,9 +43,9 @@ var updatePhelpsLab = function() {
     Correct Address: 1953 Museum Rd, Gainesville, FL 32603
 
    */
-   Listing.findOne({name: Phelps Laboratory}, function(err, data){
+   Listing.findOne({name: "Phelps Laboratory"}, function(err, data){
        if(err) throw err;
-       data.address = '1953 Museum Road Gainesville, FL 32611';
+       data.address = '1953 Museum Road Gainesville, FL 32603';
        data.save(function(err){
          if (err) throw err;
          console.log(data);
@@ -58,7 +58,7 @@ var retrieveAllListings = function() {
   /*
     Retrieve all listings in the database, and log them to the console.
    */
-   Listings.Find{}, function(err, data){
+   Listing.find(), function(err, data){
      if(err) throw err;
     console.log(data);
    }
@@ -66,5 +66,5 @@ var retrieveAllListings = function() {
 
 findLibraryWest();
 removeCable();
-updatePhelpsMemorial();
+updatePhelpsLab();
 retrieveAllListings();
