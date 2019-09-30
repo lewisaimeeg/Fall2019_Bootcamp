@@ -86,7 +86,7 @@ exports.delete = function(req, res) {
   var listing = req.listing;
 
   /* Add your code to remove the listins */
-  listing.remove(function(err)){
+  listing.remove(function(err){
     if (err){
       console.log(err);
       res.status(400).send(err);
@@ -94,7 +94,7 @@ exports.delete = function(req, res) {
     else {
       res.end();
     }
-  }
+  })
 
 };
 
