@@ -3,10 +3,10 @@
 
 module.exports = {
   db: {
-    uri: ''//place the URI of your mongo database here.
+    uri: 'mongodb+srv://new_user:myPassWord17@cluster0-sgsfr.mongodb.net/test?retryWrites=true&w=majority' //place the URI of your mongo database here.
   },
   openCage: {
-    key: '' //place your openCage public key here - Sign-up for a free key https://opencagedata.com/
+    key: '338bb6fc3ba64cc5b9689ba64c67d072' //place your openCage public key here - Sign-up for a free key https://opencagedata.com/
   },
   port: 8080
 };
