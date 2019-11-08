@@ -1,0 +1,132 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: #7d6b8c;
+}
+
+/* ##### general ##### */
+* {
+	box-sizing: border-box;
+}
+main {
+	padding: 0 2rem;
+}
+
+/* ##### Search ##### */
+header {
+	background: #3498db;
+	margin-bottom: 2rem;
+}
+
+/* ##### NamesList ##### */
+tr {
+	padding: 0;
+}
+th {
+	position: left;
+	list-style: none;
+	padding: 0.25rem 0.75rem;
+	margin: 2px;
+	border-radius: 3px;
+}
+td:hover {
+	position: left;
+	cursor: pointer;
+	background-color: #b4a9d1;
+}
+
+/* ##### Columns ##### */
+.column1 {
+	float: left;
+	width: 45%;
+	padding: 10px;
+	margin-right: 10px;
+	border: 2px solid #3c3145;
+}
+.column2 {
+	float: left;
+	width: 45%;
+	padding: 20px;
+	background-color: #eeebf7;
+	border: 2px solid #3c3145;
+}
+
+/* ##### Rows ##### */
+.row {
+	margin: 1rem;
+}
+
+.row:after {
+	padding: 1 0rem;
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.tableWrapper {
+	max-height: 800px;
+	overflow: auto;
+	scroll-behavior: smooth;
+}
+
+/* ##### Footer ##### */
+.credit {
+	text-align: center;
+	font-family: "Courier";
+	padding: 1rem 0;
+	color: #cbc0eb;
+}
+.credit a {
+	color: #2e1c5c;
+}
+.credit a:hover {
+	color: #d0c3de;
+}
+button {
+	background: #6e7299;
+	color: #cbc0eb;
+	font-family: "Courier";
+	padding: 0.6rem 1rem;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	outline: none;
+	width: 35%;
+}
+button:hover {
+	background: white;
+}
+
+#buttonContainer {
+	text-align: center;
+}
+
+.title {
+	display: block;
+	text-align: center;
+	font-family: "Courier", serif;
+	color: #cbc0eb;
+	background-color: #665673;
+	margin-bottom: 5px;
+}
+
+form {
+	width: 50%;
+}
+input[type=text] {
+	border: 2px solid #3c3145;
+	background-color: #eeebf7;
+	outline: none;
+
+	margin: 1rem;
+	font-size: 1.3rem;
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	padding: 0 2rem;
+	width: calc(100% - 2rem);
+	height: 4rem;
+}
+
+#clickName {
+	font-family: "Courier";
+}
